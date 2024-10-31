@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dale SIRO!!!</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        margin: 0;
+      }
+
+      .animation {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+      }
+
+      /* Media query para dispositivos pequeños (celulares) */
+      @media (max-width: 600px) {
+        .animation {
+          max-width: 80%; /* Imagen más pequeña en pantallas pequeñas */
+        }
+        audio {
+          width: 90%; /* Ancho de audio ajustado para pantallas pequeñas */
+        }
+      }
+
+      /* Media query para dispositivos grandes (pantallas de computadora) */
+      @media (min-width: 768px) {
+        .animation {
+          max-width: 400px; /* Imagen ligeramente más grande en pantallas grandes */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="Marcelo.gif" alt="Jefe Bailando" class="animation" />
+    <audio controls autoplay loop>
+      <source src="Se Menea.mp3" type="audio/mpeg" />
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+  </body>
+</html>
